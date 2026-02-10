@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه ایلیـا حسینی</title>
+    <title>پورس فولیو | رزومه شخصی</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav>
+    <div class="main-wrapper">
+        <nav class="glass-nav" data-aos="fade-down">
             <ul>
                 <li class="active">خانه</li>
                 <li>درباره من</li>
@@ -19,35 +20,58 @@
                 <li>ارتباط با من</li>
             </ul>
         </nav>
-    </header>
 
-    <main class="container">
-        <section class="hero" data-aos="fade-up">
-            <div class="hero-content">
-                <span class="greeting">سلام...</span>
-                <h1>ایلیا حسینی <span>هستم</span></h1>
+        <section class="hero-section">
+            <div class="hero-text" data-aos="fade-left">
+                <span class="orange-text">سلام...</span>
+                <h1>ایلیا حسینی <span class="highlight">هستم</span></h1>
                 <h3>طراح گرافیک و رابط کاربری (UI)</h3>
-                <p>من طراح جهان‌های بصری‌ام؛ می‌کوشم تا هر پیکسل را به ماجرایی بدل کنم...</p>
-                <button class="btn-resume">فایل رزومه <span>↓</span></button>
+                <p>من طراح جهان‌های بصری‌ام؛ می‌کوشم تا هر پیکسل را به ماجرایی بدل کنم. در مرز رنگ و معنا، تجربه‌ای ناب برای نگاه‌ها می‌آفرینیم.</p>
+                <button class="resume-btn">فایل رزومه <i class="fas fa-arrow-down"></i></button>
             </div>
-            <div class="hero-image">
-                <div class="img-box">
-                    <img src="profile.jpg" alt="ایلیا حسینی">
+            <div class="hero-img-box" data-aos="fade-right">
+                <div class="orange-bg">
+                    <img src="https://via.placeholder.com/300x400" alt="پروفایل">
                 </div>
             </div>
         </section>
 
-        <section class="skills" data-aos="zoom-in">
-            <h2 class="section-title">مهارت‌ها</h2>
-            <div class="skill-grid">
-                <div class="skill-item"><img src="ai-icon.png" alt="Illustrator"></div>
-                <div class="skill-item"><img src="ps-icon.png" alt="Photoshop"></div>
-                <div class="skill-item"><img src="figma-icon.png" alt="Figma"></div>
+        <hr class="separator">
+
+        <section class="timeline-section">
+            <h2 class="section-title">عناوین شغلی</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="zoom-in-up">
+                    <div class="time">۱۳۹۵ — ۱۳۹۶</div>
+                    <div class="content">
+                        <h4>طراح گرافیک جونیور</h4>
+                        <p>شرکت آوانگارد</p>
+                    </div>
                 </div>
+                <div class="timeline-item" data-aos="zoom-in-up">
+                    <div class="time">۱۳۹۶ — ۱۳۹۸</div>
+                    <div class="content">
+                        <h4>کارشناس تولید محتوا بصری</h4>
+                        <p>استودیو رنگین‌کمان</p>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
+
+        <section class="skills-section">
+            <h2 class="section-title">مهارت‌ها</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="flip-left"><i class="fab fa-adobe"></i><span>Ps</span></div>
+                <div class="skill-card" data-aos="flip-left"><i class="fab fa-adobe"></i><span>Ai</span></div>
+                <div class="skill-card" data-aos="flip-left"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="skill-card" data-aos="flip-left"><i class="fas fa-gem"></i><span>Sketch</span></div>
+            </div>
+        </section>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
