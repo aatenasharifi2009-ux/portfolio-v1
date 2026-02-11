@@ -1,77 +1,148 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>پورس فولیو | رزومه شخصی</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آتنا شریفی | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="main-wrapper">
-        <nav class="glass-nav" data-aos="fade-down">
-            <ul>
-                <li class="active">خانه</li>
-                <li>درباره من</li>
-                <li>گالری</li>
-                <li>مقالات</li>
-                <li>ارتباط با من</li>
-            </ul>
-        </nav>
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="logo">
+      AS
+      <span class="logo-desc">Visual Designer & Web Developer</span>
+    </div>
+    <nav>
+      <a href="#profile-section">مهارت‌ها</a>
+      <a href="#projects">نمونه‌کارها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </div>
+</header>
 
-        <section class="hero-section">
-            <div class="hero-text" data-aos="fade-left">
-                <span class="orange-text">سلام...</span>
-                <h1>ایلیا حسینی <span class="highlight">هستم</span></h1>
-                <h3>طراح گرافیک و رابط کاربری (UI)</h3>
-                <p>من طراح جهان‌های بصری‌ام؛ می‌کوشم تا هر پیکسل را به ماجرایی بدل کنم. در مرز رنگ و معنا، تجربه‌ای ناب برای نگاه‌ها می‌آفرینیم.</p>
-                <button class="resume-btn">فایل رزومه <i class="fas fa-arrow-down"></i></button>
-            </div>
-            <div class="hero-img-box" data-aos="fade-right">
-                <div class="orange-bg">
-                    <img src="https://via.placeholder.com/300x400" alt="پروفایل">
-                </div>
-            </div>
-        </section>
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-subtitle" id="typed-text"></span>
+      <h1>آتنا شریفی</h1>
+      <p><b>طراح گرافیک و هویت بصری</b> <br> با تجربه در طراحی هویت بصری، پوستر و در حال یادگیری برنامه نویسی وب.</p>
+      <div class="hero-buttons">
+        <a href="#profile-section" class="btn-primary">مشاهده مهارت‌ها</a>
+        <a href="#contact" class="btn-outline">همکاری با من</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <hr class="separator">
+<section class="profile-section reveal" id="profile-section">
+  <div class="skills-column">
+    <div class="skill-item" data-progress="50">
+      <span class="skill-name">طراحی وب</span>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    <div class="skill-item" data-progress="60">
+      <span class="skill-name">رسانه و محتوا</span>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    <div class="skill-item" data-progress="70">
+      <span class="skill-name">ایلاستریتور</span>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    <div class="skill-item" data-progress="80">
+      <span class="skill-name">فتوشاپ</span>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    <div class="skill-item" data-progress="40">
+      <span class="skill-name">ادیت</span>
+      <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+  </div>
 
-        <section class="timeline-section">
-            <h2 class="section-title">عناوین شغلی</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="zoom-in-up">
-                    <div class="time">۱۳۹۵ — ۱۳۹۶</div>
-                    <div class="content">
-                        <h4>طراح گرافیک جونیور</h4>
-                        <p>شرکت آوانگارد</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="zoom-in-up">
-                    <div class="time">۱۳۹۶ — ۱۳۹۸</div>
-                    <div class="content">
-                        <h4>کارشناس تولید محتوا بصری</h4>
-                        <p>استودیو رنگین‌کمان</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <div class="info-column">
+    <h2 class="main-title"><span class="highlight-orange">طراح گرافیک</span>، آشنا با محتوا و برنامه‌نویسی</h2>
+    <p class="description">با تجربه در طراحی هویت بصری، پوستر، کاور ریلز و آشنایی با دیجیتال مارکتینگ. در حال تحصیل در رشته شبکه و نرم‌افزار و یادگیری طراحی وب.</p>
+    <a href="#projects" class="btn-next">بریم سراغ نمونه‌کارها</a>
+  </div>
+</section>
 
-        <section class="skills-section">
-            <h2 class="section-title">مهارت‌ها</h2>
-            <div class="skills-grid">
-                <div class="skill-card" data-aos="flip-left"><i class="fab fa-adobe"></i><span>Ps</span></div>
-                <div class="skill-card" data-aos="flip-left"><i class="fab fa-adobe"></i><span>Ai</span></div>
-                <div class="skill-card" data-aos="flip-left"><i class="fab fa-figma"></i><span>Figma</span></div>
-                <div class="skill-card" data-aos="flip-left"><i class="fas fa-gem"></i><span>Sketch</span></div>
-            </div>
-        </section>
+<section class="projects reveal" id="projects">
+  <h2>نمونه‌کارها</h2>
+  <div class="project-grid">
+    <div class="project-card" data-category="poster">
+      <img src="assets/projects/project1.jpg" alt="پوستر">
+      <div class="project-overlay"><h3>پوستر</h3></div>
+    </div>
+    <div class="project-card" data-category="cover">
+      <img src="assets/projects/project2.jpg" alt="کاور ریلز">
+      <div class="project-overlay"><h3>کاور ریلز</h3></div>
+    </div>
+    <div class="project-card" data-category="branding">
+      <img src="assets/projects/project3.jpg" alt="هویت بصری">
+      <div class="project-overlay"><h3>هویت بصری</h3></div>
+    </div>
+  </div>
+
+  <p class="project-instruction">برای دیدن نمونه کارهای بیشتر، روی تصاویر کلیک کنید</p>
+
+  <div class="project-detail-grid" id="detail-grid"></div>
+  <button class="btn-close" id="close-btn">بازگشت</button>
+</section>
+
+<section class="contact reveal" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-info">
+      <h2>بزن بریم برای همکاری 🚀</h2>
+      <p>
+        اگر برای پروژه طراحی، هویت بصری یا همکاری وب دنبال یه آدم خلاق و دقیق می‌گردی،
+        خوشحال میشم با هم صحبت کنیم.
+      </p>
+
+      <div class="contact-details">
+        <span>Email: atenasharifi@example.com</span>
+        <span>Instagram: @yourpage</span>
+        <span>LinkedIn: yourprofile</span>
+      </div>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-    </script>
+    <form class="contact-form">
+      <input type="text" placeholder="نام شما" required>
+      <input type="email" placeholder="ایمیل شما" required>
+      <textarea placeholder="پیام شما..." rows="5" required></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top-line"></div>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h2>آتنا شریفی</h2>
+      <p>طراح گرافیک، عاشق خلاقیت و در مسیر تبدیل شدن به یک Web Creator حرفه‌ای.</p>
+    </div>
+    <div class="footer-links">
+      <h3>دسترسی سریع</h3>
+      <a href="#profile-section">مهارت‌ها</a>
+      <a href="#projects">نمونه‌کارها</a>
+      <a href="#contact">تماس</a>
+    </div>
+    <div class="footer-social">
+      <h3>ارتباط با من</h3>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 طراحی شده با ❤️ توسط آتنا شریفی</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
